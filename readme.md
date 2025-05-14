@@ -47,17 +47,23 @@ Password: root
 ```
 project/
 │
-├── public/                # index.php и статика
-├── classes/                   # PHP-классы
+├── assets/                  # CSS и JS
+│   ├── style.css
+│   └── script.js
+│
+├── classes/                 # PHP-классы
 │   ├── Product.php
 │   ├── Validator.php
 │   ├── Database.php
 │   └── ProductRepository.php
 │
+├── api.php                  # HTTP-обработчик (GET, POST)
+├── index.php                # Главная страница
 ├── docker-compose.yml
 ├── Dockerfile
-├── init.sql              # SQL для создания таблицы
+├── init.sql                 # SQL для создания таблицы
 └── README.md
+
 ```
 
 ---

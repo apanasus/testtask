@@ -6,9 +6,8 @@ services:
     ports:
       - "8800:80"
     volumes:
-      - ./public:/var/www/html
+      - .:/var/www/html
       - ./classes:/var/www/classes
-      - ./assets:/var/www/html/assets
     depends_on:
       - db
 
